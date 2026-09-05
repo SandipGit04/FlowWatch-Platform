@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Data lake contents (generated, not committed — keep folder structure only)
+data_lake/bronze/*
+data_lake/silver/*
+data_lake/gold/*
+!data_lake/bronze/.gitkeep
+!data_lake/silver/.gitkeep
+!data_lake/gold/.gitkeep
+
+# Env / secrets
+.env
+*.env.local
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+
+# Airflow local state (if run outside Docker)
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+
+# IDE
+.vscode/
+.idea/

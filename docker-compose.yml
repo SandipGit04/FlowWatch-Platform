@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: flowwatch-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: flowwatch
+      POSTGRES_PASSWORD: flowwatch_dev_password
+      POSTGRES_DB: flowwatch
+    ports:
+      - "5432:5432"
+    volumes:
+      - flowwatch_pg_data:/var/lib/postgresql/data
+
+  # Metabase added in Phase 5 — uncomment when you get there
+  # metabase:
+  #   image: metabase/metabase:latest
+  #   container_name: flowwatch-metabase
+  #   restart: unless-stopped
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - postgres
+
+volumes:
+  flowwatch_pg_data:
