@@ -222,7 +222,7 @@ flowwatch-platform/
 > warehouse container is defined.
 
 ```bash
-git clone https://github.com/<username>/flowwatch-platform.git
+git clone https://github.com/SandipGit04/FlowWatch-Platform
 cd flowwatch-platform
 
 python -m venv .venv && source .venv/bin/activate
@@ -244,10 +244,6 @@ docker compose up -d          # PostgreSQL
 | `docs/runbook.md` | Operating and troubleshooting the pipeline |
 
 ---
-
-License
-
-**MIT**
 ## License
 
 MIT
