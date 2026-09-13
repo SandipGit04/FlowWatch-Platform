@@ -244,6 +244,6 @@ docker compose up -d          # PostgreSQL
 | `docs/runbook.md` | Operating and troubleshooting the pipeline |
 
 ---
-## License
 
-MIT
+## License
+## MIT
